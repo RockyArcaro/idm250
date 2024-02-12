@@ -9,10 +9,13 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>DOCUMENT</title>
+    <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+    
+    <?php wp_head(); ?>
 </head>
 
 <body>
+
 
 <header>
     <nav>
