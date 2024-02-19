@@ -1,6 +1,57 @@
-.cart-card{
-    background-color: rgb(42, 165, 71);
+
+/*
+Theme Name: idm-250-portfolio
+Theme URI:
+Description: Rocky Arcaro Portfolio style
+Author: Rocky Arcaro
+Author URI: 
+Version: 1.0
+License: 
+License URI: 
+Tags:
+*/
+
+
+@font-face {
+    font-family: 'Delirium';
+    src: url('DELIRIUM NEON NCV.ttf') format('truetype');
+}
+
+nav {
+    font-family: 'Delirium', Arial, sans-serif; /* Fallback fonts */
+    
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    color:black;
+}
+
+.nav-item {
+    font-family: 'Delirium', Arial, sans-serif; /* Fallback fonts */
+    color:black;
+    font-size: 64px;
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header-logo{
+    width:160px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* or position: absolute; */
+    bottom: 0;
+    width: 100%;
 }
