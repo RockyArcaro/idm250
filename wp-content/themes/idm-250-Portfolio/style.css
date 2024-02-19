@@ -17,6 +17,15 @@ Tags:
     src: url('DELIRIUM NEON NCV.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_slnt,wght.ttf') format('truetype');
+}
+
+
+
+
+
 nav {
     font-family: 'Delirium', Arial, sans-serif; /* Fallback fonts */
     
@@ -55,3 +64,20 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+h1{
+    font-family: Inter, Arial;
+    font-weight: 900;
+    text-align: center;
+    font-size: 96px;
+}
+
+
+hr {
+    border: 0; /* Removes default border */
+    height: 1px; /* Sets the height of the line */
+    background-color: black; /* Sets the color of the line */
+    margin: 20px 0; /* Adds margin above and below the line */
+    width: 70vw;
+    align-self: center;
+  }
