@@ -1,7 +1,7 @@
 <?php 
 
 /*
-Template Name: Gallery Template
+Template Name: default Template
 */
 
 ?>
