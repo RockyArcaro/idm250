@@ -1,0 +1,376 @@
+
+/*
+Theme Name: idm-250-portfolio
+Theme URI:
+Description: Rocky Arcaro Portfolio style
+Author: Rocky Arcaro
+Author URI: 
+Version: 1.0
+License: 
+License URI: 
+Tags:
+*/
+
+
+@font-face {
+    font-family: 'Delirium';
+    src: url('DELIRIUM NEON NCV.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_slnt,wght.ttf') format('truetype');
+}
+
+///////////////////////
+.site-navigation {
+    display: flex; /* Display items in a row */
+}
+
+.site-navigation ul.menu {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+    justify-content: center;
+    align-items: center;
+}
+
+.site-navigation ul.menu li {
+    margin-right: 20px; /* Adjust spacing between menu items as needed */
+}
+
+/* Adjustments for link styles */
+.site-navigation ul.menu li a {
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Change link color */
+    /* Add more styles as needed */
+}
+
+//////////////////////////
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    font-family: 'Delirium', Arial, sans-serif; /* Fallback fonts */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:black;
+}
+
+.nav-item {
+    font-family: 'Delirium', Arial, sans-serif; /* Fallback fonts */
+    color:black;
+    font-size: 96px;
+    margin: 20px;
+}
+p{
+    font-family: Inter, Arial;
+    color:black;
+    font-size:18px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+#header-logo{
+    width:100px;
+    margin:0px;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+footer {
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* You can adjust the height according to your footer design */
+    background-color: #000000; /* Set your desired background color */
+    color: #ffffff; /* Set your desired text color */
+}
+
+
+h1{
+    font-family: Inter, Arial;
+    font-weight: 900;
+    text-align: center;
+    font-size: 64px;
+}
+
+h2{
+    font-family: Inter, Arial;
+    font-weight: 900;
+    text-align: center;
+    font-size: 48px;
+}
+
+h3{
+    font-family: Inter, Arial;
+    font-weight: 900;
+    text-align: center;
+    font-size: 32px;
+}
+
+h4{
+    font-family: Inter, Arial;
+    font-weight: 900;
+    text-align: center;
+    font-size: 16px;
+}
+h5{
+    font-family: Inter, Arial;
+    font-weight: 900;
+    text-align: center;
+    font-size: 12px;
+}
+
+h6{
+    font-family: Inter, Arial;
+    font-weight: 900;
+    text-align: center;
+    font-size: 11px;
+}
+
+ul{
+    margin:1rem;
+    font-family: Inter, Arial;
+}
+
+ol{
+    margin:1rem;
+    font-family: Inter, Arial;
+}
+
+p{
+    font-family: Inter, Arial;
+    margin: 1rem;
+}
+.in-text-link{
+    font-weight: bold;
+    text-decoration: underline;
+    color:black;
+}
+
+.caption-image{
+    border: solid;
+    border-color:black;
+    border-width: 5px;
+    margin:1rem;
+    font-size:24px;
+}
+table{
+    margin:1rem;
+    font-family: Inter, Arial;
+    max-width:500px;
+    border: solid;
+    border-color:black;
+    border-width: 5px;
+    border-spacing: 5px;
+}
+
+hr {
+    border: 0; /* Removes default border */
+    height: 1px; /* Sets the height of the line */
+    background-color: black; /* Sets the color of the line */
+    margin: 20px 0; /* Adds margin above and below the line */
+    width: 70vw;
+    align-self: center;
+  }
+
+.gallery-wrapper {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; /* Adjust as needed */
+    margin:40px;
+    padding: 40px;
+}
+
+.gallery-container {
+    width: 100%; /* Adjust as needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Adjust as needed */
+    align-items: center;
+    margin:40px;
+    padding: 40px;
+}
+
+.gallery-item {
+    /* Add any specific styles for the gallery items if needed */
+    /* For example: width: 30%; */
+    margin: 50px;
+}
+.home-page-hero{
+    width:100vw;
+}
+.post-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding:1rem;
+}
+.text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.home-tab-image{
+    width:100vw;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.post-thumbnail{
+    max-height:300px;
+}
+.post-container{
+    display: flex;
+    flex-direction: column;
+    margin:1rem;
+    justify-content: center;
+    align-items: center;
+}
+.error-page{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width:100vw;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.error-img{
+    width:200px;
+}
+
+@media (max-width: 768px){
+    
+    .site-navigation ul.menu li {
+    margin-right: 10px; /* Adjust spacing between menu items as needed */
+    font-size:24px;
+}
+    
+    nav {
+    font-family: 'Delirium', Arial, sans-serif; /* Fallback fonts */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:black;
+}
+#header-logo{
+    width:35px;
+    margin:0px;
+    margin-right:10px;
+}
+h1{
+    font-family: Inter, Arial;
+    font-weight: 900;
+    text-align: center;
+    font-size: 32px;
+}
+
+.nav-item {
+    font-family: 'Delirium', Arial, sans-serif; /* Fallback fonts */
+    color:black;
+    font-size: 32px;
+    margin: 16px;
+}
+
+}
+
+@media (min-width: 769px) and (max-width: 1280px){
+    .site-navigation ul.menu li {
+    margin-right: 50px; /* Adjust spacing between menu items as needed */
+    font-size:36px;
+}
+    
+    nav {
+    font-family: 'Delirium', Arial, sans-serif; /* Fallback fonts */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:black;
+}
+#header-logo{
+    width:60px;
+    margin:0px;
+    margin-right:40px;
+}
+h1{
+    font-family: Inter, Arial;
+    font-weight: 900;
+    text-align: center;
+    font-size: 48px;
+}
+.nav-item {
+    font-family: 'Delirium', Arial, sans-serif; /* Fallback fonts */
+    color:black;
+    font-size: 64px;
+    margin: 16px;
+}
+.error-img{
+    width:600px;
+}
+}
+
+@media (min-width:1281px){
+    .site-navigation ul.menu li {
+    margin-right: 75px; /* Adjust spacing between menu items as needed */
+    font-size:64px;
+}
+    
+    nav {
+    font-family: 'Delirium', Arial, sans-serif; /* Fallback fonts */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:black;
+}
+#header-logo{
+    width:100px;
+    margin:0px;
+    margin-right:60px;
+}
+h1{
+    font-family: Inter, Arial;
+    font-weight: 900;
+    text-align: center;
+    font-size: 64px;
+}
+.nav-item {
+    font-family: 'Delirium', Arial, sans-serif; /* Fallback fonts */
+    color:black;
+    font-size: 64px;
+    margin: 16px;
+}
+.error-img{
+    width:800px;
+}
+}
