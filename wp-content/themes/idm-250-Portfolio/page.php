@@ -7,7 +7,7 @@ Template Name: page template
 ?>
 
 <?php get_header(); ?>
-<?php get_footer(); ?>
+
 
 <h1>
   <?php echo get_the_title(); ?>
@@ -33,3 +33,4 @@ if (have_posts()) {
 
 ?>
 
+<?php get_footer(); ?>
