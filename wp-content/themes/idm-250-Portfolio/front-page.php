@@ -1,4 +1,14 @@
+<?php 
+
+/*
+Template Name: Home template Main
+*/
+
+?>
+
 <?php get_header(); ?>
+
+
 
 <?php
 if (have_posts()) {
@@ -19,6 +29,5 @@ if (have_posts()) {
 } // End if
 
 ?>
-
 
 <?php get_footer(); ?>

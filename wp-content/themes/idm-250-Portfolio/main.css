@@ -271,6 +271,41 @@ hr {
     margin-top:0px;
     color:black;
 }
+
+
+.thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    margin: 10px;
+    text-align: center;
+}
+
+.thumbnail-wrapper {
+    position: relative;
+}
+
+.thumbnail-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.entry-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity as needed */
+    color: #000;
+}
+
+
+
 @media (max-width: 768px){
     
     .site-navigation ul.menu li {
@@ -309,6 +344,14 @@ h1{
 .thumbnail-class{
     width: 200px;
     height: auto;
+}
+.about-content{
+    font-size:18px;
+    margin:0px;
+    margin-top:24px;
+    margin-bottom:24px;
+    
+    
 }
 
 }
@@ -352,12 +395,30 @@ h1{
     width: 350px;
     height: auto;
 }
+.about-content{
+    font-size:24px;
+    margin:24px;
+    margin-left: 16px;
+    margin-right:16px;
+    
+}
+.item-title{
+    width: 175px;
+}
 }
 
 @media (min-width:1281px){
     .site-navigation ul.menu li {
     margin-right: 75px; /* Adjust spacing between menu items as needed */
     font-size:64px;
+}
+.about-content{
+    font-size:24px;
+    margin:24px;
+    margin-left: 150px;
+    margin-right:150px;
+    margin-bottom: 64px;
+    
 }
     
     nav {
@@ -392,5 +453,8 @@ h1{
 .thumbnail-class{
     width: 600px;
     height: auto;
+}
+.item-title{
+    width: 600px;
 }
 }

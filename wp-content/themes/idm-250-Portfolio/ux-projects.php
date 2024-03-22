@@ -22,19 +22,21 @@ Template Name: ux projects template
         while ($category_posts->have_posts()) :
             $category_posts->the_post();
     ?>
-            <article id="post-<?php the_ID(); ?>" <?php post_class('thumbnail'); ?>>
+            <article class="item">
                 <a href="<?php the_permalink(); ?>" class="thumbnail-link">
                     <?php
                     // Display featured image
                     if (has_post_thumbnail()) :
-                        the_post_thumbnail('large', array('class' => 'thumbnail-class'));
+                    ?>
+                        <div class="thumbnail-wrapper">
+                            <?php the_post_thumbnail('large', array('class' => 'thumbnail-image')); ?>
+                            <h4 class="entry-title"><?php the_title(); ?></h4>
+                        </div>
+                    <?php
                     endif;
                     ?>
                 </a>
-                <header class="entry-header">
-                    <h4 class="entry-title"><a style="color:#000000" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                </header><!-- .entry-header -->
-            </article><!-- #post-<?php the_ID(); ?> -->
+            </article>
     <?php
         endwhile;
         wp_reset_postdata(); // Reset post data
@@ -44,5 +46,6 @@ Template Name: ux projects template
     endif;
     ?>
 </div><!-- .thumbnail-container -->
+
 
 <?php get_footer(); ?>
